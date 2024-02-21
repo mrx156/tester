@@ -2,7 +2,7 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 getgenv().KillAura = nil
 getgenv().ChestFarm = nil
 local X = Material.Load({
-	Title = "Project XXL | Lazzy Exploits",
+	Title = "Project XL 6.05",
 	Style = 2,
 	SizeX = 250,
 	SizeY = 150,
@@ -19,7 +19,7 @@ local Y = X.New({
 
 
 local B = Y.Toggle({
-	Text = "Roblox | Kill Aura",
+	Text = "spec ability",
 	Callback = function(Value)
 		getgenv().KillAura = Value
 	end,
