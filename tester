@@ -1,7 +1,8 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
-getgenv().Spec ability = nil
+getgenv().KillAura = nil
+getgenv().ChestFarm = nil
 local X = Material.Load({
-	Title = "Project XL 6.05",
+	Title = "Project XXL | Lazzy Exploits",
 	Style = 2,
 	SizeX = 250,
 	SizeY = 150,
@@ -18,9 +19,9 @@ local Y = X.New({
 
 
 local B = Y.Toggle({
-	Text = "Spec ability",
+	Text = "Roblox | Kill Aura",
 	Callback = function(Value)
-		getgenv().Spec ability = Value
+		getgenv().KillAura = Value
 	end,
 	Enabled = false
 })
@@ -29,7 +30,7 @@ local B = Y.Toggle({
 
 
 while wait() do
-    if getgenv().Spec ability == true then
+    if getgenv().KillAura == true then
 
 local args = {
     [1] = false,
@@ -42,3 +43,4 @@ game:GetService("ReplicatedStorage").RemoteEvents.IntangibilityRemote:FireServer
 
   end
   end
+
