@@ -33,13 +33,10 @@ while wait() do
     if getgenv().KillAura == true then
 
 local args = {
-    [1] = false,
-    [2] = Vector3.new(5301.21240234375, -5150.62890625, 7126.1572265625),
-    [3] = CFrame.new(5301.21240234375, -5150.62890625, 7126.1572265625) * CFrame.Angles(-2.266211748123169, -0.7732877731323242, -2.4446725845336914),
-    [4] = 1
+    [1] = game:GetService("ReplicatedStorage").Quests:FindFirstChild("Defeat 4 of Rahgan's Overseers")
 }
 
-game:GetService("ReplicatedStorage").RemoteEvents.IntangibilityRemote:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").RemoteEvents.ChangeQuestRemote:FireServer(unpack(args))
 
   end
   end
