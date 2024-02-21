@@ -1,12 +1,11 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
-getgenv().KillAura = nil
-getgenv().ChestFarm = nil
+getgenv().Spec ability = nil
 local X = Material.Load({
 	Title = "Project XL 6.05",
 	Style = 2,
 	SizeX = 250,
 	SizeY = 150,
-	Theme = "Light",
+	Theme = "Dark",
 	ColorOverrides = {
 		MainFrame = Color3.fromRGB(235,235,235)
 	}
@@ -19,9 +18,9 @@ local Y = X.New({
 
 
 local B = Y.Toggle({
-	Text = "spec ability",
+	Text = "Spec ability",
 	Callback = function(Value)
-		getgenv().KillAura = Value
+		getgenv().Spec ability = Value
 	end,
 	Enabled = false
 })
@@ -30,7 +29,7 @@ local B = Y.Toggle({
 
 
 while wait() do
-    if getgenv().KillAura == true then
+    if getgenv().Spec ability == true then
 
 local args = {
     [1] = false,
