@@ -31,6 +31,12 @@ local B = Y.Toggle({
 
 while wait() do
     if getgenv().KillAura == true then
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerValues.DialogNpc,
+    [2] = "KINGKONGKINGGKONGGG"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.ChangeNpcValueRemote:FireServer(unpack(args))
 
 local args = {
     [1] = game:GetService("ReplicatedStorage").Quests:FindFirstChild("Defeat 4 of Rahgan's Overseers")
