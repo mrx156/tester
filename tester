@@ -29,7 +29,7 @@ local B = Y.Toggle({
 
 
 
-while wait(20) do
+while wait(10) do
     if getgenv().KillAura == true then
 
 local args = {
